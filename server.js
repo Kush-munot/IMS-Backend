@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors')
 require('dotenv').config()
 
-const url = process.env.URL;
+const url = process.env.DB_LINK;
 const app = express()
 mongoose.connect(url)
 app.use(cors())
